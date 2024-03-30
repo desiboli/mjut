@@ -15,7 +15,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        display: ["Londrina Outline", ...defaultTheme.fontFamily.sans],
+        display: ["Tilt Warp Variable", ...defaultTheme.fontFamily.sans],
       },
       keyframes: {
         "accordion-down": {
