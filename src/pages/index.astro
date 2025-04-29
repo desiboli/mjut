@@ -1,19 +1,33 @@
 ---
 import { WavyBackground } from "@/components/WavyBackground"
 import Layout from "../layouts/Layout.astro"
+import { Image } from "astro:assets"
+import forestImage from "../assets/forest.jpg"
 ---
 
 <Layout title="Mjut - Where Silence Speaks.">
-  <main>
-    <WavyBackground client:load className="max-w-4xl mx-auto overflow-hidden">
-      <h1 class="text-7xl text-[#13151a] font-bold text-center font-display">
+  <main
+    class="relative h-screen w-screen overflow-hidden"
+    style={`background-image: url(${forestImage.src})`}
+  >
+    <!-- <WavyBackground client:load className="max-w-4xl mx-auto overflow-hidden"> -->
+    <!-- <Image
+      src={forestImage}
+      alt="A bird sitting on a nest of eggs."
+      class="w-full h-full object-cover"
+    /> -->
+
+    <div class="absolute inset-0 flex flex-col items-center justify-center">
+      <h1 class="text-7xl text-[#FFFFFF] font-bold text-center font-display">
         mjut
       </h1>
       <p
-        class="text-base md:text-lg mt-4 text-[#13151a]/80 font-normal uppercase text-center tracking-[.3em] font-display"
+        class="text-base md:text-lg mt-4 text-[#FFFFFF]/80 font-normal uppercase text-center tracking-[.3em] font-display"
       >
         Stockholm
       </p>
-    </WavyBackground>
+    </div>
+
+    <!-- </WavyBackground> -->
   </main>
 </Layout>

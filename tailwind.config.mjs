@@ -15,7 +15,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        display: ["Tilt Warp Variable", ...defaultTheme.fontFamily.sans],
+        display: ["sans-serif", ...defaultTheme.fontFamily.sans],
       },
       keyframes: {
         "accordion-down": {
